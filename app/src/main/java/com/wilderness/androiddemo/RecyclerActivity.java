@@ -10,6 +10,7 @@ import com.wilderness.androiddemo.bean.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class RecyclerActivity extends AppCompatActivity {
 
@@ -20,15 +21,18 @@ public class RecyclerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
         initFruits();
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+//        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
         FruitAdapter adapter = new FruitAdapter(fruitList);
         recyclerView.setAdapter(adapter);
     }
 
     private void initFruits() {
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             Fruit apple = new Fruit(getRandomLengthName("Apple"), R.drawable.apple_pic);
             fruitList.add(apple);
             Fruit banana = new Fruit(getRandomLengthName("Banana"), R.drawable.banana_pic);
@@ -53,13 +57,12 @@ public class RecyclerActivity extends AppCompatActivity {
     }
 
     private String getRandomLengthName(String name) {
-//        Random random = new Random();
-//        int length = random.nextInt(20) + 1;
-//        StringBuilder builder = new StringBuilder();
-//        for (int i = 0; i < length; i++) {
-//            builder.append(name);
-//        }
-//        return builder.toString();
-        return name;
+        Random random = new Random();
+        int length = random.nextInt(20) + 1;
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            builder.append(name);
+        }
+        return builder.toString();
     }
 }
