@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">android-demo</string>
     <string name="imagedes">ImageDes</string>
-    <string name="btn_recyclerview_fruit">RecyclerViewFruit</string>
-    <string name="btn_recyclerview_msg">RecyclerViewMsg</string>
+    <string name="btn_recyclerview_fruit">Fruit</string>
+    <string name="btn_recyclerview_msg">Message</string>
     <string name="input_text_hint">Type something here</string>
     <string name="btn_send">Send</string>
+    <string name="btn_left_fragment">Button</string>
+    <string name="txt_right_fragment">This is right fragment</string>
+    <string name="btn_fragment">fragment</string>
+    <string name="another_right_fragment">This is another right fragment</string>
+    <string name="btn_left_fragment_back">Back</string>
 </resources>
