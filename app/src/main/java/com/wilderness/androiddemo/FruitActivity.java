@@ -6,29 +6,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import com.wilderness.androiddemo.adapter.FruitAdapter;
 import com.wilderness.androiddemo.bean.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class RecyclerActivity extends AppCompatActivity {
+public class FruitActivity extends AppCompatActivity {
 
     private List<Fruit> fruitList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler);
+        setContentView(R.layout.activity_fruit);
         initFruits();
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView fruitRecyclerView = findViewById(R.id.fruit_recycler_view);
         StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 //        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 //        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
-        recyclerView.setLayoutManager(layoutManager);
+        fruitRecyclerView.setLayoutManager(layoutManager);
         FruitAdapter adapter = new FruitAdapter(fruitList);
-        recyclerView.setAdapter(adapter);
+        fruitRecyclerView.setAdapter(adapter);
     }
 
     private void initFruits() {

@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">android-demo</string>
     <string name="imagedes">ImageDes</string>
-    <string name="btn_recyclerview">RecyclerView</string>
+    <string name="btn_recyclerview_fruit">RecyclerViewFruit</string>
+    <string name="btn_recyclerview_msg">RecyclerViewMsg</string>
+    <string name="input_text_hint">Type something here</string>
+    <string name="btn_send">Send</string>
 </resources>

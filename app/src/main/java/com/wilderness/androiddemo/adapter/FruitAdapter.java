@@ -1,4 +1,4 @@
-package com.wilderness.androiddemo;
+package com.wilderness.androiddemo.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.wilderness.androiddemo.R;
 import com.wilderness.androiddemo.bean.Fruit;
 
 import java.util.List;
