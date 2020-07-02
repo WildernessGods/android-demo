@@ -10,4 +10,5 @@
     <string name="btn_fragment">fragment</string>
     <string name="another_right_fragment">This is another right fragment</string>
     <string name="btn_left_fragment_back">Back</string>
+    <string name="btn_news">News</string>
 </resources>

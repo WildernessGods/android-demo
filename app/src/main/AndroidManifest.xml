@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentActivity"></activity>
+        <activity android:name=".NewsContentActivity"></activity>
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".FragmentActivity" />
         <activity android:name=".MsgActivity" />
         <activity android:name=".FruitActivity" />
         <activity android:name=".MainActivity">
