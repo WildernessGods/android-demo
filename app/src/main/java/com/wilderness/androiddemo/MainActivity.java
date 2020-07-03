@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +42,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NewsActivity.class);
                 startActivity(intent);
+            }
+        });
+        Button btnBroadcast = findViewById(R.id.btnBroadcast);
+        btnBroadcast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BroadcastActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btnMyBroadcast = findViewById(R.id.btnMyBroadcast);
+        btnMyBroadcast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.wilderness.androiddemo.broadcast.MY_BROADCAST");
+                sendOrderedBroadcast(intent, null);
+            }
+        });
+        Button btnForceOffline = findViewById(R.id.btnForceOffline);
+        btnForceOffline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.wilderness.androiddemo.broadcast.FORCE_OFFLINE");
+                sendBroadcast(intent);
             }
         });
     }

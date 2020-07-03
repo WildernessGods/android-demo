@@ -11,4 +11,11 @@
     <string name="another_right_fragment">This is another right fragment</string>
     <string name="btn_left_fragment_back">Back</string>
     <string name="btn_news">News</string>
+    <string name="btn_broadcast">Broadcast</string>
+    <string name="btn_my_broadcast">MyBroadcast</string>
+    <string name="btn_local_broadcast">LocalBroadcast</string>
+    <string name="lbl_account">Account</string>
+    <string name="lbl_password">Password:</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_force_offline">Send force offline broadcast</string>
 </resources>

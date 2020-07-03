@@ -49,7 +49,7 @@ public class NewsTitleFragment extends Fragment {
 
     private String getRandomLengthContent(String content) {
         Random random = new Random();
-        int length = random.nextInt(20) + 1;
+        int length = random.nextInt(500) + 1;
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < length; i++) {
             stringBuilder.append(content);
