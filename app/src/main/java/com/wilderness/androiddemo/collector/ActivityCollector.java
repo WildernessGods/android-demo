@@ -1,4 +1,4 @@
-package com.wilderness.androiddemo;
+package com.wilderness.androiddemo.collector;
 
 import android.app.Activity;
 
