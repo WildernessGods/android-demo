@@ -68,5 +68,29 @@ public class MainActivity extends BaseActivity {
                 sendBroadcast(intent);
             }
         });
+        Button btnFile = findViewById(R.id.btnFile);
+        btnFile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FileActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btnDatabase = findViewById(R.id.btnDatabase);
+        btnDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btnRuntimePermission = findViewById(R.id.btnRuntimePermission);
+        btnRuntimePermission.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RuntimePermissionMainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

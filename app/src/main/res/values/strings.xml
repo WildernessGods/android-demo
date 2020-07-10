@@ -18,4 +18,15 @@
     <string name="lbl_password">Password:</string>
     <string name="btn_login">Login</string>
     <string name="btn_force_offline">Send force offline broadcast</string>
+    <string name="edit_type_something_here">Type something here</string>
+    <string name="btn_file">file</string>
+    <string name="btn_save_data">Save Data</string>
+    <string name="btn_create_databse">Create Databse</string>
+    <string name="btn_database">Database</string>
+    <string name="btn_add_data">add data</string>
+    <string name="btn_update_data">update data</string>
+    <string name="btn_query_data">query data</string>
+    <string name="btn_delete_data">delete data</string>
+    <string name="btn_runtime_permission">RuntimePermission</string>
+    <string name="btn_make_call">Make Call</string>
 </resources>
