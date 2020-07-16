@@ -29,4 +29,5 @@
     <string name="btn_delete_data">delete data</string>
     <string name="btn_runtime_permission">RuntimePermission</string>
     <string name="btn_make_call">Make Call</string>
+    <string name="btn_contacts_view">contacts view</string>
 </resources>

@@ -92,5 +92,13 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button btnContacts = findViewById(R.id.btnContacts);
+        btnContacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ContactsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
